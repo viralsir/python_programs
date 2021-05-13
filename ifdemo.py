@@ -25,18 +25,18 @@
 
 '''
 
-no1=int(input("Enter No1:"))
-no2=int(input("Enter No2:"))
-no3=int(input("Enter No3:"))
-
-if no1>0 and no2>0 and no3>0:
-    if no1>no2 and no1>no3:
-        print(no1," is maximum")
-    elif no2>no3 and no2>no1:
-        print(no2," is maximum")
+no=[]
+for i in range(3):
+    no.append(int(input("Enter No:")))
+    
+if no[0]>0 and no[1]>0 and no[2]>0:
+    if no[0]>no[1] and no[0]>no[2]:
+        print(no[0]," is maximum")
+    elif no[1]>no[2] and no[1]>no[0]:
+        print(no[1]," is maximum")
     else:
-        print(no3," is maximum")
-elif no1<0 or no2<0 or no3<0:
+        print(no[2]," is maximum")
+elif no[0]<0 or no[1]<0 or no[2]<0:
     print(" nagetive no are not allowed  ")
 else :
     print(" all no are zero ")
