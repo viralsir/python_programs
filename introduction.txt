@@ -1,0 +1,43 @@
+Programming :- 
+writing or giving set of 
+instructions to electronic device.
+
+Programming language 
+C, C++, Java,Ruby ,Python
+Compiler vs  Interpreter
+ 
+electronic  device (01) 
+
+statically type language
+  C,C++,		
+dynamic type language 
+Python,Ruby,smalltalk
+
+platform dependent language
+.c/.cpp --- compile (OP) ---> .obj(OP) -- run ---> .exe
+
+compiler linux
+
+.java --- compiler  ---> .class 
+-run interpreter--> output.
+
+pop language
+pop :- produre oriented programming 
+C 
+	
+  
+oop language 
+oop :-
+
+
+
+Program :- set of instructions for 
+eletronic device. 
+
+Editor :- edit program  notepad
+IDE : Intregrated development enviourment
+pycharm, sublime, 
+
+Python 
+compiler + interpeter  + ide 
+ 
