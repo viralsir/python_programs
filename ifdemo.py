@@ -36,9 +36,10 @@ if no1>0 and no2>0 and no3>0:
         print(no2," is maximum")
     else:
         print(no3," is maximum")
-else:
-    print("invalid input ")
-
+elif no1<0 or no2<0 or no3<0:
+    print(" nagetive no are not allowed  ")
+else :
+    print(" all no are zero ")
 
 
 
