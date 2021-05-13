@@ -28,8 +28,14 @@
 no=[]
 for i in range(3):
     no.append(int(input("Enter No:")))
-    
-if no[0]>0 and no[1]>0 and no[2]>0:
+
+is_positive=True
+for i in no:
+    if i<0:
+        is_positive=False;
+
+
+if is_positive==True:
     if no[0]>no[1] and no[0]>no[2]:
         print(no[0]," is maximum")
     elif no[1]>no[2] and no[1]>no[0]:
