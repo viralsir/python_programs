@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task demo</title>
+  <script>
+    document.addEventListener('DOMContentLoaded',function(){
+
+      document.querySelector("#task").onkeyup=function(){
+
+
+
+        if(document.querySelector("#task").value.length>0)
+        {
+          document.querySelector("#submit").disabled=false;
+        }
+        else
+        {
+          document.querySelector("#submit").disabled=true;
+        }
+
+
+      }
+
+
+      document.querySelector("form").onsubmit=function(){
+        let task=document.querySelector("#task").value;
+
+        let li=document.createElement("li")
+        li.innerHTML=task;
+        let ul=document.querySelector("#tasks");
+        ul.append(li);
+        document.querySelector("#task").value='';
+        document.querySelector("#submit").disabled=true;
+
+        return false;
+      }
+
+    })
+  </script>
+</head>
+<body>
+  <h1>Task list </h1>
+  <ul id="tasks"></ul>
+  <form>
+    <input type="text" size="20" placeholder="new task" id="task">
+    <input type="submit" id="submit">
+
+     <h2> no of notes :</h2>
+     <ul>
+       <li> 10 : <input type="text"></li>
+       <li> 20 : <input type="text"></li>
+       <li> 50 : <input type="text"></li>
+       <li> 100 : <input type="text"></li>
+       <li> 200 : <input type="text"></li>
+       <li> 500 : <input type="text"></li>
+       <li> 2000 : <input type="text"></li>
+     </ul>
+         </br>
+         <button> Calculate total </button>
+         <h2> Total is </h2>
+  </form>
+</body>
+</html>

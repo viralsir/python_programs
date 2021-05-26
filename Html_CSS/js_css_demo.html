@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>style demo</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',function (){
+            let h1=document.querySelector("h1");
+            /*document.querySelectorAll("button").forEach(button =>{
+                button.onclick=function(){
+                    h1.style.color=this.dataset.color;
+                }
+            })*/
+            document.querySelector("select").onchange=function(){
+                h1.style.color=this.value;
+            }
+
+        })
+    </script>
+</head>
+<body>
+    <h1> Hello </h1>
+   <!-- <button data-color="red">Red</button>
+    <button data-color="green">Green</button>
+    <button data-color="blue">Blue</button>-->
+
+    <select>
+        <option value="black">black</option>
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+        <option value="yellow">yellow</option>
+
+    </select>
+
+</body>
+</html>
