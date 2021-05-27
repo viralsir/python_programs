@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+      // json   java script object notation
+      // AJAX :
+      document.addEventListener('DOMContentLoaded',function(){
+
+        document.querySelector("form").onsubmit=function(){
+
+           fetch("http://api.exchangeratesapi.io/v1/latest?access_key=e52838f0cebc07fba65d3762721e8764")
+          .then(response => response.json())
+          .then(data => {
+              let h1=document.querySelector("h1");
+              let code=document.querySelector("#code").value;
+              let rate=data.rates[code.toUpperCase()];
+              if (rate == undefined)
+              {
+                h1.innerHTML=`Invalid Country Code`;
+              }
+              else
+              {
+                h1.innerHTML=`1 EUR is equal to ${rate} ${code}`;
+              }
+
+              document.querySelector("#code").value='';
+
+        })
+          return false;
+        }
+
+
+
+      })
+
+  </script>
+</head>
+<body>
+ <h1></h1>
+ <form>
+   <input type="text" placeholder="Country Code" id="code">
+   <input type="submit">
+ </form>
+</body>
+</html>
