@@ -1,0 +1,66 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Note counter</title>-->
+<!--  <script src="Note.js"></script>-->
+<!--    <style>-->
+<!--        form{-->
+<!--            text-align: center;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<form>-->
+
+<!--     <h2> no of notes :</h2>-->
+<!--     <ul>-->
+<!--       <li> 10   : <input type="number"></li>-->
+<!--       <li> 20   : <input type="number"></li>-->
+<!--       <li> 50   : <input type="number"></li>-->
+<!--       <li> 100  : <input type="number"></li>-->
+<!--       <li> 200  : <input type="number"></li>-->
+<!--       <li> 500  : <input type="number"></li>-->
+<!--       <li> 2000 : <input type="number"></li>-->
+<!--     </ul>-->
+<!--         </br>-->
+<!--         <button> Calculate total </button>-->
+<!--         <h2> Total is </h2>-->
+<!--  </form>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Note Counter</title>
+<style>
+body{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+</style>
+    <script src="Note.js"></script>
+</head>
+<body>
+<form>
+    <h1>Count your notes</h1>
+10:  <input type="number"  id="firstNumber" /><br>
+20:  <input type="number"  id="secondNumber" /><br>
+50:  <input type="number"  id="ThirdNumber"/><br>
+100: <input type="number"  id="FourNumber"/><br>
+200: <input type="number"  id="FiveNumber"/><br>
+500: <input type="number"  id="SixNumber"/><br>
+2000:<input type="number"  id="SevenNumber"/><br>
+<input type="button" onClick="multiplyBy()" Value="Calculate"/>
+</form>
+<p>Total Cash :<span id = "result"></span> <br></p>
+    <table id="no_notes">
+
+    </table>
+
+
+</body>
+</html>
